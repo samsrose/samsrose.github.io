@@ -1,0 +1,18 @@
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
+::selection {background: transparent;}
+::-moz-selection {background: transparent;}
+html{font-family:'Source Code Pro',Helvetica;color:#D9CB9E;background-color:#1E1E20;}
+body{margin:0 30px;position:relative;overflow: hidden;}
+header {display:block;color:#D9CB9E;font-size:64px;white-space:nowrap;font-weight: 300;}
+header a{text-decoration:none;color:#D9CB9E;font-size:64px;white-space:nowrap}
+article h1{font-size:36px;}
+article p{font-size:20px; width: 0 auto;}
+article pre{font-size:20px;}
+article blockquote{font-size:20px;}
+article aside{float:right;width:33%;margin: 0 0 0 24px;z-index:100}
+article > *:before,article > *:after {content: " ";display:table}
+article p:after,article aside:after{clear: both}
+a[href] {color:#D9CB9E;text-decoration:none}
+a[href]:hover {color: #DC3522;text-decoration: none;transition: color 0.5s;}
+blockquote {width: 66%; display: table; padding: 11px 22px;background-color: rgba(0, 0, 0, 0.05); font-weight: lighter; font-style: italic; font-size: 24px; margin: 0;}
+blockquote > footer {float: right;}
