@@ -40,6 +40,13 @@ blockquote > footer {float: right;}
     font-size: 40px;
   }
 }
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  article pre {
+    font-size: 120px;
+  }
+}
 
 @media print, projection {
   .str {
