@@ -1,12 +1,12 @@
 .pln {color: white;}
 @media screen {
   .str,.string,.regularexpression,.value {color: #e6db74;}
-  .kwd,.keyword {color: #66D9EF;}
-  .com,.comment,.line-comment,.block-comment {color: #75715E;}
+  .kwd,.k {color: #66D9EF;}
+  .com,.comment,.lc,.bc {color: #75715E;}
   .param {color: #FD971F;font-style: italic;}
   .typ,.lang-html .attribute {color: #a6e22e;}
   .lit,.number,.numeric,.boolean {color: #ae81ff;}
-  .lang-html .title,.control-flow,.operator{color:#f92672}
+  .lang-html .title,.cf,.o{color:#f92672}
   .atn {color: #a6e22e;}
   .atv {color: #e6db74;}
   .fun {color: red;}
