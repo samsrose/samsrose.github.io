@@ -33,16 +33,10 @@ blockquote > footer {float: right;}
   .atv {color: #e6db74;}
   .fun {color: red;}
 }
+
 @media only screen
-  and (max-device-width:600px)
-  and (orientation : portrait) {
-  article pre {
-    font-size: 40px;
-  }
-}
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-min-device-pixel-ratio: 3) {
   article pre {
     font-size: 120px;
   }
