@@ -2,7 +2,7 @@
   "name": "samsrose.github.io",
   "version": "1.0.0",
   "description": "Sam Rose's website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp"
@@ -19,11 +19,13 @@
   },
   "homepage": "https://github.com/samsrose/samsrose.github.io#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.2",
     "bourbon": "^5.0.0",
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.2.0",
     "gulp-sass": "^3.1.0",
-    "neat": "^1.2.2"
+    "neat": "^1.2.2",
+    "node-neat": "^2.0.0-beta.0"
   }
 }

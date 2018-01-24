@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var bs = require('browser-sync').create();
+var nn = require('node-neat');
 
 gulp.task('browser-sync', ['sass'], function () {
   bs.init({
@@ -11,15 +12,17 @@ gulp.task('browser-sync', ['sass'], function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('scss/*.scss')
-    .pipe(sass())
+  return gulp.src('assets/scss/*.scss')
+    .pipe(sass({
+      includePaths: nn.includePaths
+    }))
     .on('error', sass.logError)
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('assets/css'))
     .pipe(bs.reload({ stream: true }));
 });
 
 gulp.task('watch', ['browser-sync'], function () {
-  gulp.watch("scss/*.scss", ['sass']);
+  gulp.watch("assets/scss/*.scss", ['sass']);
   gulp.watch("*.html").on('change', bs.reload);
 });
 

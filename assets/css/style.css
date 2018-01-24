@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url(../img/bg.jpg);
+  background-origin: center center;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  body .link {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 2.8em;
+    line-height: 1;
+    color: #ffffff;
+    display: inline-block;
+    text-shadow: #333 0px 1px 5px; }
+  body .link--anim {
+    text-transform: uppercase;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.89;
+    color: #ffffff; }
+  body .link--anim:hover {
+    color: #ffffff; }
+  body .link--anim::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 800px;
+    top: 60%;
+    margin-top: -30px;
+    right: 0;
+    background: #ffffff;
+    color: #000;
+    transform: translate3d(0, -199%, 0);
+    transition: all 0.69s;
+    transition-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.75);
+    opacity: 0.85; }
+  body .link--anim:hover::after {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.1;
+    margin-top: 100px; }
+  body .link--anim::before {
+    content: attr(data-letters);
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 0%;
+    transition: width 0.5s 1s; }
+  body .link--anim:hover::before {
+    width: 100%; }
+  body .link--anim.active {
+    opacity: 0.5; }
+  body header {
+    position: relative;
+    margin: 20px auto;
+    padding: 0;
+    height: 10vh;
+    width: 62.5%;
+    font-weight: 300;
+    border-radius: 8px; }
+    body header h1 {
+      font-size: 1.5em;
+      top: 55px;
+      color: white;
+      line-height: 2;
+      position: absolute;
+      float: left;
+      margin-left: 3%;
+      text-transform: uppercase;
+      display: block;
+      text-shadow: #7a7a7a 0 2px 1px; }
+    body header ul {
+      list-style: none;
+      list-style-type: none;
+      display: block;
+      position: relative;
+      float: right;
+      margin: 40px 50px; }
+      body header ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 25px 15px;
+        text-align: center;
+        height: 30px; }
+        body header ul li:first-child {
+          border-left: 0; }
+  body main {
+    clear: both;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: rgba(99, 93, 93, 0.35) 0 5px 10px;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center; }
+    body main section {
+      margin: 0;
+      padding: 0;
+      height: 100%; }
+      body main section .page_title {
+        padding: 80px 0;
+        font-size: 5rem;
+        color: rgba(85, 85, 85, 0.95);
+        margin: 0 auto;
+        position: relative; }
+      body main section .page_body {
+        font-size: 1.25em;
+        padding: 0 100px; }
