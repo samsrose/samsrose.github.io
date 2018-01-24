@@ -2,3 +2,7 @@ node_modules/
 Untitled.code-workspace
 README.md
 assets/scss/
+gulpfile.js
+package.json
+package-lock.json
+.gitignore
