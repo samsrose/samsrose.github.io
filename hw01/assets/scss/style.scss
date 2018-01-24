@@ -6,10 +6,7 @@
 @mixin debug($size,$color) {
   border: $size $color dotted !important;
 }
-
-  $wht1: #ffffff;
-
-
+$wht1: #ffffff;
 body {
   overflow: hidden;
   width: 100vw;
