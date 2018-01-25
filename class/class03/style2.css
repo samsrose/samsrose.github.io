@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+nav {
+  border-top: 4px rgb(238, 99, 99) solid;
+  /* transition: 0.9s all ease-in; */
+}
+a {
+  color: #cccccc;
+}
+a:hover {
+  color: #666;
+  transition: 0.9s color ease;
+}
+.dropdown {
+  transition: 1.5s all ease;
+}
+.navbar-brand {
+  font-size: 2.5em;
+  line-height: 0.8;
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+}
