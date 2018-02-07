@@ -1,6 +1,7 @@
 node_modules/
 Untitled.code-workspace
 README.md
+LICENSE
 assets/scss/
 gulpfile.js
 package.json

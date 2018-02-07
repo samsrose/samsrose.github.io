@@ -1,0 +1,25 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+@import "nav.scss";
+@import "bootstrap-overrides.scss";
+// @import "resume-item.scss";
+// Components
+// @import "components/components.scss";
+$ten: '10px';
+
+body {
+    background: ($orange - $ten);
+}
+.app-container {
+    box-shadow: rgba(#555, 0.75) 0 0 ($ten);
+    padding: 0;
+    margin-top: 15%;
+    border: ($ten) solid $orange;
+    background-color: $yellow;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 3px;
+}
