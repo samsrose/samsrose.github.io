@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <head>
-<title>Check Back Shortly.</title>
+<title>Uh oh. Something broke...</title>
   <style type="text/css">
     body {margin:0;padding:0;height:100vh;width:100vw;overflow:hidden;}
-    h1{position:relative;margin:5% auto;font-size:2em;text-align:center;color:#fff;padding:15px 10px; border: 2px solid #eee;background-color:#ddd; border-radius: 5px;}
-    div#brb{position:absolute;left:0;top:0;right:0;bottom:0;height:100vh;width:100vw;z-index:-999;background:url("brb.gif")}
+    h1{    position: relative;
+    font-family: Helvetica, sans-serif;
+    margin: 5% auto;
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    padding: 15px 10px;
+    border: 3px solid #cccc;
+    background-color: #999;
+    border-radius: 2px;
+    width: 40vw;
+    outline: 2px solid #888;}
+    div#brb{
+      position:absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      height:100vh;
+      width:100vw;
+      z-index:-999;
+      background:url("brb.gif")}
   </style>
 </head>
 <body>
   <div id="brb">
-  <h1>Page under construction...Check back later.</h1>
+  <h1>[ Maintainence Mode ]</h1>
   </div>
 </body>
 </html>
