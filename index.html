@@ -1,38 +1,372 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-<title>Uh oh. Something broke...</title>
-  <style type="text/css">
-    body {margin:0;padding:0;height:100vh;width:100vw;overflow:hidden;}
-    h1{    position: relative;
-    font-family: Helvetica, sans-serif;
-    margin: 5% auto;
-    font-size: 2em;
-    color: #000;
-    text-align: center;
-    padding: 15px 10px;
-    border: 3px solid #cccc;
-    background-color: #999;
-    border-radius: 2px;
-    width: 40vw;
-    outline: 2px solid #888;
-    }
-    div#brb{
-      position:absolute;
-      left:0;
-      top:0;
-      right:0;
-      bottom:0;
-      height:100vh;
-      background-repeat:no-repeat;
-      background-size: cover;
-      width:100vw;
-      z-index:-999;
-      background:url("brb.gif")}
-  </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110173393-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-xxxxxxxxx-1');
+
+	</script>
+
+	<meta charset='utf-8'>
+	<meta name="description" content="Personal Site for Sam Rose - Web Developer">
+	<meta name="author" content="Sam Rose">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sam Rose</title>
+
+	<!--Bootstrap links, CSS, JQUERY, JavaScript-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <div id="brb">
-  <h1>[ Maintainence Mode ]</h1>
-  </div>
+
+	<header class="jumbotron text-center animate-bottom noOverflow relativeP">
+		<div class="logo">
+			<h1 class="myName">Sam Rose</h1>
+			<p>Full Stack Web Developer</p>
+		</div>
+	</header>
+
+	<nav class="container padding5" id="navigator">
+		<ul class="nav nav-pills nav-justified padding-zero">
+			<li class="nav-item" id="navWho">
+				<a class="nav-link hover-light">Who I Am</a>
+			</li>
+			<li class="nav-item" id="navPortfolio">
+				<a class="nav-link hover-light">Portfolio</a>
+			</li>
+			<li class="nav-item" id="navResume">
+				<a class="nav-link hover-light">Resume</a>
+			</li>
+			<li class="nav-item" id="navContact">
+				<a class="nav-link hover-light">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="modal fade" id="resumeModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a href="https://www.linkedin.com/in/samuelsrose" target="_blank">View My LinkedIn</a>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row text-center">
+						<div class="col-sm-12">
+							<div id="profile_image">
+								<img src="assets/images/githubProfileImg.jpg" alt="Profile Pic" height='200'>
+							</div>
+							<div>
+								<h3 class="mb-0">Sam Rose</h3>
+								<p class="text-muted mb-0">Centennial, CO</p>
+							</div>
+							<div class="mtb-10">
+								<em>
+									Full Stack Web Developer with a passion for UI/UX. Educated in Business Management with strengths in HTML, CSS, Bootstrap, jQuery and JavaScript.
+								</em>
+							</div>
+							<hr class="mtb-10">
+							<div>
+								<a href="https://github.com/samsrose" target="_blank">GitHub</a>
+								<a href="https://www.linkedin.com/in/samuelsrose" target="_blank">LinkedIn</a>
+								<a id="resumeEmail" href="mailto:samuelrose@alum.calarts.edu">Email</a>
+								<a id="resumePhone" href="tel:530-000-0000">Phone</a>
+							</div>
+							<hr class="mtb-10">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div>
+								<h4>EDUCATION</h4>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-education"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>UC Davis – Extension</h5>
+									<p>
+										<em>Full Stack Web Development</em>
+									</p>
+									<p>- An intensive 24-week long boot camp dedicated to designing and building web applications. Skills learned consisted of HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handlebars JS, & React Js.
+									</p>
+									<p class='text-muted'>January '18 - July '18</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-education"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>California Intitute of the Arts</h5>
+									<p>
+										<em>Music Technology, Graphic Design, Classical Bassist</em>
+									</p>
+									<p class='text-muted'>August 2011 - May 2014</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>APPLICATIONS</h4>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-folder-open"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>hailMinder</h5>
+									<p>- Web Application for alerting users of pending/active hailstorms in their specified locations</p>
+									<p>- Developed weather-alert functions, database, and user profile page</p>
+									<p>- Bootstrap, Firebase, jQuery, Javascript, emailJS, Open-Weather API</p>
+									<p>
+										<a href="https://github.com/fredlintz5/hailMinder" target="_blank">https://github.com/fredlintz5/hailMinder</a>
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-folder-open"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>Bicycle Rentals</h5>
+									<p>- Retail Rental Management Web Application</p>
+									<p>- Sole Developer</p>
+									<p>- Bootstrap, Firebase, jQuery, Javascript, Paypal API, Google Auto-complete API</p>
+									<p>
+										<a href="https://github.com/fredlintz5/bicycle_rentals" target="_blank">https://github.com/fredlintz5/bicycle_rentals</a>
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-folder-open"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>Node LIRI App</h5>
+									<p>- Command Line Node JS App for returning information from different API's</p>
+									<p>- Sole Developer</p>
+									<p>- Node JS, Inquirer, Twitter-API, Spotify-API</p>
+									<p>
+										<a href="https://github.com/fredlintz5/liri_node_app" target="_blank">https://github.com/fredlintz5/liri_node_app</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>RELEVANT EXPERIENCE</h4>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-briefcase"></span>
+								</div>
+								<div class="col-xs-11">
+									<h5>Gator Cycle</h5>
+									<p>- WordPress Site</p>
+									<p>- Shared responsibilities with one other developer to design, implement, and maintain retail web-site</p>
+									<p>
+										<a href="https://www.gatorcycle.com/" target="_blank">https://www.gatorcycle.com/</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>ADDITIONAL WORK EXPERIENCE</h4>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-briefcase"></span>
+								</div>
+								<div class="col-xs-11">
+									<p>Sales Associate at Elevation Cycles</p>
+									<p class='text-muted'>February 2017 - Current</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-briefcase"></span>
+								</div>
+								<div class="col-xs-11">
+									<p>Commercial Outbound Sales Representative at Infinite Energy</p>
+									<p class='text-muted'>June 2016 - January 2017</p>
+									<p class="toggle" data-toggle="collapse" data-target="#iei">View Description</p>
+									<div id="iei" class="collapse">
+										<p>Outbound B2B phone sales, in charge of new customer acquisition.</p>
+										<p>- SalesForce</p>
+										<p>- Sharepoint</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1 text-center text-muted">
+									<span class="glyphicon glyphicon-briefcase"></span>
+								</div>
+								<div class="col-xs-11">
+									<p>General Manager at Gator Cycle</p>
+									<p class='text-muted'>August 2012 - May 2016</p>
+									<p class="toggle" data-toggle="collapse" data-target="#gator">View Description</p>
+									<div id="gator" class="collapse">
+										<p>General Management of Retail Sales/Service Operations</p>
+										<p>- Human Resources</p>
+										<p>- Bookkeeping</p>
+										<p>- Sales Forecasting</p>
+										<p>- Marketing</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid" id="who">
+		<div class="row">
+			<div class="col-sm-5 relativeP row-height noOverflow paddingRight">
+				<div class="relativeP row-height slide_in" id="dogPark">
+					<div class="slide_in_Text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-7 row-height" id="whoMobile">
+				<div class="row">
+					<div class="col-sm-7 paddingRight noOverflow">
+						<div class="relativeP row-heightHalf slide_in" id="highLine">
+							<div class="slide_in_Text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 paddingZero noOverflow">
+						<div class="relativeP row-heightHalf slide_in" id="mountains">
+							<!-- <div class="slide_in_Text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
+								</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 paddingTopRight noOverflow">
+						<div class="relativeP row-heightHalf slide_in" id="profilePic">
+							<!-- <div class="slide_in_Text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
+								</p>
+							</div> -->
+						</div>
+					</div>
+					<div class="col-sm-8 paddingTop noOverflow">
+						<div class="relativeP row-heightHalf slide_in" id="cofeve">
+							<div class="slide_in_Text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="container" id="portfolio">
+		<div class="row" id="portBackground">
+			<img id="portBanner" src="assets/images/portfolioHeader.png">
+		</div>
+		<div class="row mb-80">
+			<div class="col-sm-6">
+				<img src="assets/images/alpacaResponsive.png" width="90%">
+			</div>
+			<div class="col-sm-6">
+				<h4 class="mt-60">WebScraper - Alpaca Bike Co.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus, architecto commodi nostrum quas, nulla veniam molestias modi expedita ducimus natus iusto inventore rerum earum quisquam asperiores esse? Provident, dolore?</p>
+				<a href="https://webscraper-bikeshop.herokuapp.com" class="btn btn-default" target="_blank">Visit the Site</a>
+			</div>
+		</div>
+		<div class="row mb-80">
+			<div class="col-sm-6 text-right">
+				<h4 class="mt-60">hailMinder - Weather Alert Web App</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus, architecto commodi nostrum quas, nulla veniam molestias modi expedita ducimus natus iusto inventore rerum earum quisquam asperiores esse? Provident, dolore?</p>
+				<a href="https://fredlintz5.github.io/hailMinder/" class="btn btn-default" target="_blank">Visit the Site</a>
+			</div>
+			<div class="col-sm-6">
+				<img src="assets/images/hailResponsive.png" width="90%">
+			</div>
+		</div>
+		<div class="row mb-80">
+			<div class="col-sm-6">
+				<img src="assets/images/alpacaResponsive.png" width="90%">
+			</div>
+			<div class="col-sm-6">
+				<h4 class="mt-60">SnapBiz - Business Card Text Capture</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus, architecto commodi nostrum quas, nulla veniam molestias modi expedita ducimus natus iusto inventore rerum earum quisquam asperiores esse? Provident, dolore?</p>
+				<a href="https://snap-biz.herokuapp.com" class="btn btn-default" target="_blank">Visit the Site</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid text-center" id="footer">
+		<div class="row">
+			<div class="col-sm-4" id="contact">
+				<p>Contact</p>
+				<hr>
+				<div id="socialLinks">
+					<a id="resumeEmail" href="mailto:fred.lintz5@gmail.com">
+						<span class="glyphicon glyphicon-envelope"></span>
+					</a>
+					<a id="resumePhone" href="tel:352-514-1246">
+						<span class="glyphicon glyphicon-phone-alt"></span>
+					</a>
+					<a href="https://github.com/fredlintz5" target="_blank">
+						<img id="git" src="assets/images/github.png" alt="github">
+					</a>
+					<a href="https://www.linkedin.com/in/fred-lintz/" target="_blank">
+						<img id="link" src="assets/images/linkedin.png" alt="linked-in">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-4" id="projectListOne"></div>
+			<div class="col-sm-4" id="projectListTwo"></div>
+		</div>
+		<div class="row text-center margin-top">
+			<div class="col-sm-12" id="copyright">&copy Copyright - Sam Rose 2017</div>
+		</div>
+	</footer>
+
+	<script src="assets/javascript/fredlintz.js"></script>
 </body>
+
 </html>
